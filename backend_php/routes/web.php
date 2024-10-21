@@ -7,7 +7,7 @@ use App\Http\Controllers\StoreProducts;
 
 Route::get('/products', [Products::class, 'getAllProducts']);
 Route::get('/stores', [Stores::class, 'getAllStores']);
-Route::get('/stores-products', [StoreProducts::class, 'getAllStoreProducts']);
+Route::get('/storeproducts', [StoreProducts::class, 'getAllStoreProducts']);
 
 Route::get('/', function () {
     return view('welcome');

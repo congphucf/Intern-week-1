@@ -11,6 +11,6 @@ class Stores extends Controller
     {
         $query = "select * from stores";
         $stores = DB::select($query);
-        return response()->json($stores);
+        return response()->json($stores)->header("Access-Control-Allow-Origin",  "*");;
     }
 }
